@@ -1,0 +1,26 @@
+body {
+    background-color: #090909;
+    color: #ffffff;
+}
+
+/* If a fancy lightbox "effect" isn't needed, or wanted, just use a `box` div to format photo gallery using flexbox */
+/* .box {
+    display: flex;
+    flex-direction: start;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: start;
+    margin: 0 auto;
+    align-content: space-around;
+
+} 
+*/
+
+/* Set the width of the images to 10% of the container element */
+/* Set the height to "auto" to maintain the aspect ratio of the images */
+img {
+    width: 10%;
+    margin: 0 auto;
+    padding: 10px;
+    height: auto;
+}

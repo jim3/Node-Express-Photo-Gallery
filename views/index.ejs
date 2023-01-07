@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>xyz</title>
+        <!-- <link type="text/css" rel="stylesheet" href="css/lightgallery-bundle.css" /> -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery-bundle.css"
+            integrity="sha512-6aaApUMcaPp0vAwb6hmiuodW2+/fgwR+yxUZEH+jvFCe0iEHP+K13w5uQz7QMl3XbVt7L5rAoceu5d6n9gFlmQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <code>xyz</code>
+
+        <div id="lightgallery">
+            <% for (let i = 0; i < images.length; i++) { %>
+            <a href="<%= images[i] %>">
+                <img src="<%= images[i] %>" alt="image" />
+            </a>
+            <% } %>
+        </div>
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.umd.js"
+            integrity="sha512-euXz+0y8n0CNT4ErPdTB4UHxjeC38REaNEmfSJAKJX9BxiHN9y3xk/Nm1qWz25/WZcXkVkriDeYJZR76Jp+vWg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/autoplay/lg-autoplay.umd.js"
+            integrity="sha512-wCrmyha8mPnB7kxJsMLrduIgPtvfjwtcifGebPgWzaCX+w96az8AV/IACpnjZP3VGmes/IsNqL4KmfJRoYYJPg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script type="text/javascript">
+            lightGallery(document.getElementById("lightgallery"), {
+                plugins: [lgAutoplay],
+                autoplay: true,
+                autoplayControls: true,
+                speed: 50,
+            });
+        </script>
+    </body>
+</html>
