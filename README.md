@@ -1,13 +1,13 @@
-Node & Express Drag-n-Drop Photo Gallery
+### Node & Express Drag-n-Drop Photo Gallery
+--- ---------------------------------------
+Photo gallery app that lets you drag and drop images into a folder and have them automatically appear in the gallery.
 
-A simple photo gallery app that lets you drap and drop images into an image folder without all of the fuss of creating numbered file names 
-I used the excellent [lightGallery](https://www.lightgalleryjs.com/) ♥ plugin for the lightbox effect, it's not needed for the drag-n-drop "feature",
-the rendering of random images on refresh or even the sizing of the images (just uncomment the box div) but it's *super nice* to have.
+#### Features
 
-I used JavaScript for the handler function that renders images randomly from a images array.
+- Drag and drop images into the image folder and have them automatically appear in the gallery (no refresh needed) 
 
-`git clone https://github.com/jim3/Node-Express-Photo-Gallery.git`
+- Randomly render images on refresh
 
-`cd Node-Express-Photo-Gallery`
+- Lightbox effect when clicking on an image
 
-`npm install`
+<sub>I used the [lightGallery](https://www.lightgalleryjs.com/) plugin for the lightbox effect</sub>
